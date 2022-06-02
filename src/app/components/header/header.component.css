@@ -1,0 +1,63 @@
+header {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #2C394B;
+}
+
+.logo {
+  height: 45px;
+  width: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+nav {
+  overflow: hidden;
+  color: #ffff;
+  position: absolute;
+  top: 1.6%;
+  left: 300px;
+}
+
+nav li {
+  text-align:center;
+}
+
+nav a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+nav a:hover{
+  background-color: #082032;
+  border-radius: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.user {
+  margin-left: 1000px;
+  margin-top: -80px
+}
+
+.user img  {
+  height: 30px;
+  width: 30px;
+}
+
+.user:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
