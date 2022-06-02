@@ -2,4 +2,5 @@ html {
   margin: -10px;
   background-color: #334756;
   font-family: Ubuntu, serif;
+  scroll-behavior: smooth;
 }
