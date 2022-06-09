@@ -4,3 +4,7 @@ html {
   font-family: Ubuntu, serif;
   scroll-behavior: smooth;
 }
+
+body, html {
+  height: 100%;
+}

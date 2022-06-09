@@ -9,6 +9,7 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
 import { ApiComponent } from './components/api/api.component';
+import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ApiComponent } from './components/api/api.component';
     AboutComponent,
     LoginComponent,
     ApiComponent,
+    LeaderboardComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,4 +12,7 @@ export class ApiComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getStarted() {
+    console.log("test");
+  }
 }
