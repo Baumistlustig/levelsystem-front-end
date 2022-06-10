@@ -12,7 +12,7 @@ export class PostService {
     return this.http.post(url, body)
   }
 
-  getPosts(url: string, body: object) {
+  get(url: string, body: object) {
     return this.http.get(url, body);
   }
 }
