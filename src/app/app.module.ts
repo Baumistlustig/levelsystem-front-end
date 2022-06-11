@@ -16,9 +16,9 @@ import { DataPolicyComponent } from './components/data-policy/data-policy.compon
 import { RootComponent } from './components/root/root.component';
 
 const myRoutes: Routes = [
-  { path: '', component: RootComponent},
-  { path: 'impress', component: ImpressComponent},
-  { path: 'data-policy', component: DataPolicyComponent},
+  { path: '', component: RootComponent },
+  { path: 'impress', component: ImpressComponent },
+  { path: 'data-policy', component: DataPolicyComponent },
 ];
 
 @NgModule({
