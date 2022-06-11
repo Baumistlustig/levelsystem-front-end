@@ -2,7 +2,6 @@
   <div class="bottom_border">
     <h2>Leaderboard</h2>
   </div>
-
   <div class="container">
     <div class="leaderboard">
       <div class="head">
@@ -10,7 +9,14 @@
       </div>
       <div class="body">
         <ol>
-          <li *ngFor="let x of data; first as f">{{x.username}} <div class="experience">{{x.experience}} xp</div></li>
+          <li *ngFor="
+          let x of data;
+          first as f;
+          even as e"
+          >
+            {{x.username}}
+            <div class="experience">{{x.experience}} xp</div>
+          </li>
         </ol>
       </div>
     </div>
