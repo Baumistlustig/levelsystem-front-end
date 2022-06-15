@@ -15,11 +15,20 @@ import { LeaderboardComponent } from './components/leaderboard/leaderboard.compo
 import { ImpressComponent } from './components/impress/impress.component';
 import { DataPolicyComponent } from './components/data-policy/data-policy.component';
 import { RootComponent } from './components/root/root.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+import {FormsModule} from "@angular/forms";
+import { UserComponent } from './components/user/user.component';
 
 const myRoutes: Routes = [
   { path: '', component: RootComponent },
   { path: 'impress', component: ImpressComponent },
   { path: 'data-policy', component: DataPolicyComponent },
+  { path: 'user', component: UserComponent },
 ];
 
 @NgModule({
@@ -35,13 +44,24 @@ const myRoutes: Routes = [
     ImpressComponent,
     DataPolicyComponent,
     RootComponent,
+    SearchBarComponent,
+    UserComponent,
   ],
   imports: [
     RouterModule.forRoot(myRoutes),
     BrowserModule,
     HttpClientModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatIconModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    SearchBarComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export const routing = RouterModule.forRoot(myRoutes);

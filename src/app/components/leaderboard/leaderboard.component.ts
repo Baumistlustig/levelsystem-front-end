@@ -19,7 +19,6 @@ export class LeaderboardComponent implements OnInit {
         if (data === { "error": "Not enough users in database!" }) {
           throw data;
         }
-        console.log(data);
       });
   }
 }
