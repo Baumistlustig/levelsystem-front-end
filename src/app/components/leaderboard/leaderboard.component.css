@@ -13,14 +13,12 @@ ol {
 /* container */
 .container {
   width: 350px;
-  height: 350px;
+  height: 330px;
   border-radius: 10px;
   background-color: #2C394B;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: 51%;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   overflow: hidden;
@@ -30,6 +28,12 @@ ol {
 .leaderboard {
   background: #2C394B;
 }
+
+.container:hover {
+  background-color: #082032;
+  transition-duration: 0.75s;
+}
+
 .leaderboard:hover {
   background-color: #082032;
   transition-duration: 0.75s;
@@ -37,6 +41,7 @@ ol {
 
 /* head */
 .leaderboard .head {
+  margin-top: 5%;
   color: snow;
   font-size: 20px;
   text-align: center;
