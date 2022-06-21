@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from "@angular/common/http";
+import { DataBusService } from "../../service/databus.service";
 
 @Component({
   selector: 'app-search-bar',
@@ -9,17 +10,19 @@ import { HttpClient } from "@angular/common/http";
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor(private route:Router, private client:HttpClient) {  }
+  constructor(private route:Router, private client:HttpClient, private dataBus:DataBusService) {  }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {
+    this.dataBus.currentApprovalStageMessage.subscribe(msg => this.searchResult = msg);
+  }
 
-  searchResult : String = '';
+  searchResult: string = '';
 
   search(){
     if (this.searchResult === '') {
       return;
     }
-    console.log(this.searchResult)
+    this.dataBus.updateApprovalMessage(this.searchResult)
 
     this.route.navigate(['/user']);
   }
