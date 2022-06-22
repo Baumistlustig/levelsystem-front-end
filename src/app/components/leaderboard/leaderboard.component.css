@@ -29,11 +29,6 @@ ol {
   background: #2C394B;
 }
 
-.container:hover {
-  background-color: #082032;
-  transition-duration: 0.75s;
-}
-
 .leaderboard:hover {
   background-color: #082032;
   transition-duration: 0.75s;
@@ -41,7 +36,7 @@ ol {
 
 /* head */
 .leaderboard .head {
-  margin-top: 5%;
+  padding-top: 5%;
   color: snow;
   font-size: 20px;
   text-align: center;

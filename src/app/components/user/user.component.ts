@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchBarComponent } from "../search-bar/search-bar.component";
-import { HttpClient } from "@angular/common/http";
-import { DataBusService } from "../../service/databus.service";
-import {Router} from "@angular/router";
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import {conditionallyCreateMapObjectLiteral} from "@angular/compiler/src/render3/view/util";
 
 @Component({
   selector: 'app-user',
@@ -10,24 +9,27 @@ import {Router} from "@angular/router";
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  data:any;
+  data: any;
   searchResult: any;
 
-  constructor(private route:Router, private client:HttpClient, private dataBus:DataBusService) { }
+  constructor(
+    private route:Router,
+    private client:HttpClient,
+  ) { }
+
+  isObject(val: any): boolean { return val[0] === undefined; }
 
   ngOnInit(): void {
-    this.dataBus.currentApprovalStageMessage.subscribe(msg => this.searchResult = msg)
+
+    this.searchResult = this.route.url.slice(6);
 
     console.log(this.searchResult)
 
     this.client.get(`http://localhost:3000/api/leveling/search/${this.searchResult}`)
       .subscribe(data => {
         this.data = data;
-        if (data === {"error": "no_user_found"}) {
-          throw data;
-        }
 
-        console.log(data)
+        console.log(this.data)
       })
     ;
   }

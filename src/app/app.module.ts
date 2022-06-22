@@ -16,20 +16,16 @@ import { ImpressComponent } from './components/impress/impress.component';
 import { DataPolicyComponent } from './components/data-policy/data-policy.component';
 import { RootComponent } from './components/root/root.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import {MatInputModule} from "@angular/material/input";
-import {MatSelectModule} from "@angular/material/select";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatButtonModule} from "@angular/material/button";
-import {MatIconModule} from "@angular/material/icon";
-import {FormsModule} from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
+import { MatSelectModule } from "@angular/material/select";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
+import { FormsModule } from "@angular/forms";
 import { UserComponent } from './components/user/user.component';
+import { myRoutes } from "./app-routing.module";
 
-const myRoutes: Routes = [
-  { path: '', component: RootComponent },
-  { path: 'impress', component: ImpressComponent },
-  { path: 'data-policy', component: DataPolicyComponent },
-  { path: 'user', component: UserComponent },
-];
+
 
 @NgModule({
   declarations: [
