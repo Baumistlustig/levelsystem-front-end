@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import {conditionallyCreateMapObjectLiteral} from "@angular/compiler/src/render3/view/util";
 
 @Component({
   selector: 'app-user',
@@ -21,7 +20,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.searchResult = this.route.url.slice(6);
+    this.searchResult = this.route.url.slice(13);
 
     console.log(this.searchResult)
 

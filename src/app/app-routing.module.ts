@@ -8,5 +8,5 @@ export const myRoutes: Routes = [
   { path: '', component: RootComponent },
   { path: 'impress', component: ImpressComponent },
   { path: 'data-policy', component: DataPolicyComponent },
-  { path: 'user/:user_id', component: UserComponent },
+  { path: 'user/search/:user_id', component: UserComponent },
 ];
