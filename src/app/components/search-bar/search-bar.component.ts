@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {UserComponent} from "../user/user.component";
 
 @Component({
   selector: 'app-search-bar',
@@ -17,12 +18,14 @@ export class SearchBarComponent implements OnInit {
 
   searchResult: string = '';
 
-  search(){
+  search() {
     if (this.searchResult === '') {
       return;
     }
 
-    this.route.navigate([`/user/search/${this.searchResult}`]);
-
+    this.route.navigate([`/user/search/${this.searchResult}`])
+      .then(() => {
+        window.location.reload();
+      });
   }
 }

@@ -16,6 +16,7 @@ export class LeaderboardComponent implements OnInit {
     this.client.get('http://localhost:3000/api/leveling/leaderboard/5')
       .subscribe(data => {
         this.data = data;
+        console.log(data)
 
         if (data === { "error": "Not enough users in database!" }) {
           throw data;
