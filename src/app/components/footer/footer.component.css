@@ -7,10 +7,12 @@ footer {
 }
 
 .social_footer_list {
-  margin-left: 37%;
+  margin-left: auto;
+  margin-right: auto;
   position: center;
   display:table;
   list-style-type:none;
+  padding: 0;
 }
 
 .social_footer_list li {
@@ -33,7 +35,8 @@ footer {
 }
 
 .bottom_border2 {
-  position: center;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom:1px solid #323f45;
   padding-bottom:20px;
 }

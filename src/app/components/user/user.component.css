@@ -10,7 +10,8 @@
 
 .container-user {
   margin-top: 5%;
-  margin-left: 39%;
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
 }
 
