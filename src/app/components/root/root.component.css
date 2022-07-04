@@ -2,10 +2,8 @@
   margin-top: 1%;
   margin-right: -0.5%;
   margin-left: -0.5%;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)),
-  url("src/assets/pictures/wallpaper.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('src/assets/pictures/wallpaper.jpg');
 
   /* Set a specific height */
   height: 50%;
@@ -33,7 +31,7 @@
   border-radius: 30px;
   background-color: #082032;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 15px;
   padding: 20px;

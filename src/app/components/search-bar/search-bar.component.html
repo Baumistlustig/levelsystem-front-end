@@ -1,8 +1,15 @@
 <form class="search-bar">
   <mat-form-field class="example-full-width">
     <span matPrefix> </span>
-    <input type="tel" matInput placeholder="Search for Users" name= "search" [(ngModel)]= "searchResult">
-    <button matSuffix mat-button (click)="search()"><mat-icon>search</mat-icon></button>
+    <input
+      type="tel"
+      matInput
+      placeholder="Search for Users"
+      name="search"
+      [(ngModel)]="searchResult" />
+    <button matSuffix mat-button (click)="search()">
+      <mat-icon>search</mat-icon>
+    </button>
   </mat-form-field>
-  <br/>
+  <br />
 </form>

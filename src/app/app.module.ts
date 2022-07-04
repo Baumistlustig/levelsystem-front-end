@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {RouterModule, Routes} from "@angular/router";
-
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
@@ -16,16 +15,14 @@ import { ImpressComponent } from './components/impress/impress.component';
 import { DataPolicyComponent } from './components/data-policy/data-policy.component';
 import { RootComponent } from './components/root/root.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { MatInputModule } from "@angular/material/input";
-import { MatSelectModule } from "@angular/material/select";
-import { MatFormFieldModule } from "@angular/material/form-field";
-import { MatButtonModule } from "@angular/material/button";
-import { MatIconModule } from "@angular/material/icon";
-import { FormsModule } from "@angular/forms";
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
 import { UserComponent } from './components/user/user.component';
-import { myRoutes } from "./app-routing.module";
-
-
+import { myRoutes } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -54,10 +51,8 @@ import { myRoutes } from "./app-routing.module";
     MatIconModule,
     FormsModule,
   ],
-  providers: [
-    SearchBarComponent
-  ],
-  bootstrap: [AppComponent]
+  providers: [SearchBarComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 export const routing = RouterModule.forRoot(myRoutes);

@@ -7,8 +7,14 @@
 </section>
 -->
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+  integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+  crossorigin="anonymous" />
 
 <div *ngIf="!isObject(data); then thenBlock; else elseBlock"></div>
 
@@ -17,9 +23,17 @@
     <div class="row">
       <!-- Single Advisor-->
       <div class="user_profile">
-        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <div
+          class="single_advisor_profile wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="
+            visibility: visible;
+            animation-delay: 0.2s;
+            animation-name: fadeInUp;
+          ">
           <!-- Team Thumb-->
-          <div class="advisor_thumb"><img [src]="data[0].discord_avatar" alt="" class="img">
+          <div class="advisor_thumb">
+            <img [src]="data[0].discord_avatar" alt="" class="img" />
             <!-- Social Info-->
             <div class="social-info">
               <a href="#"><i class="fab fa-discord"></i></a>
@@ -29,8 +43,8 @@
           </div>
           <!-- Team Details-->
           <div class="single_advisor_details_info">
-            <p>{{data[0].discord_name}}</p>
-            <h6 class="designation">Experience: {{data[0].experience}}</h6>
+            <p>{{ data[0].discord_name }}</p>
+            <h6 class="designation">Experience: {{ data[0].experience }}</h6>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {UserComponent} from "../user/user.component";
+import { UserComponent } from '../user/user.component';
 
 @Component({
   selector: 'app-search-bar',
@@ -8,13 +8,9 @@ import {UserComponent} from "../user/user.component";
   styleUrls: ['./search-bar.component.css'],
 })
 export class SearchBarComponent implements OnInit {
+  constructor(private route: Router) {}
 
-  constructor(
-    private route:Router,
-  ) {  }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   searchResult: string = '';
 
@@ -23,9 +19,8 @@ export class SearchBarComponent implements OnInit {
       return;
     }
 
-    this.route.navigate([`/user/search/${this.searchResult}`])
-      .then(() => {
-        window.location.reload();
-      });
+    this.route.navigate([`/user/search/${this.searchResult}`]).then(() => {
+      window.location.reload();
+    });
   }
 }

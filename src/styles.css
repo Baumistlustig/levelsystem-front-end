@@ -5,26 +5,32 @@ html {
   scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
 section {
   margin-top: 5%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .bottom_border {
   margin-left: 36%;
   width: 30%;
-  border-bottom:1px solid #2C394B;
+  border-bottom: 1px solid #2c394b;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
 
 a {
-  color: #FF4C29;
+  color: #ff4c29;
 }
